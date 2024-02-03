@@ -10,12 +10,12 @@
 body {
     background-image: url(img/R.jpeg);
     background-size: cover;
-    background-position: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10vh;
     margin-bottom: 10vh;
+
 }
 
 
@@ -93,18 +93,20 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 12px;
 }
+
 @media only screen and (max-width: 375px) {
-    .container > .header .judul {
+    .container>.header .judul {
         font-size: 15px;
         margin: 0 5px 0 5px;
     }
+
     .container>.subheader>.subjudul {
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         font-size: 12px;
         margin-top: 3px;
     }
 
-    .container > .content button {
+    .container>.content button {
         height: 40px;
         font-size: 12px;
     }
@@ -113,29 +115,69 @@ body {
         font-size: 10px;
     }
 }
+
+@media only screen and (max-width: 430px) {
+    body {
+        background-image: url(img/R.jpeg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 37%;
+        margin-bottom: 37%;
+
+    }
+
+    .container>.header .judul {
+        font-size: 15px;
+        margin: 0 5px 0 5px;
+    }
+
+    .container>.subheader>.subjudul {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+        margin-top: 3px;
+    }
+
+    .container>.content button {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .container .footer .subfooter {
+        font-size: 10px;
+    }
+}
+
+
 @media only screen and (max-width: 600px) {
     .container {
         width: 90%;
         height: auto;
         margin: 10px;
     }
-    .container > .header {
+
+    .container>.header {
         margin: 35px 0 0 0;
     }
-    .container > .header .judul {
+
+    .container>.header .judul {
         font-size: 15px;
         margin: 0 5px 0 5px;
     }
+
     .container>.subheader>.subjudul {
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         font-size: 12px;
         margin-top: 3px;
     }
-    .container > .content button {
+
+    .container>.content button {
         width: 200px;
         height: 40px;
         font-size: 10px;
     }
+
     .container .footer .subfooter {
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         margin-bottom: 30px;
@@ -150,11 +192,11 @@ body {
         margin: 33px 0;
     }
 
-    .container > .header .judul {
+    .container>.header .judul {
         font-size: 25px;
     }
 
-    .container > .content button {
+    .container>.content button {
         width: 500px;
         font-size: 17px;
     }
