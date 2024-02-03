@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(img/R.jpeg);
+    background-size: cover;
+    background-position: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+
+.container {
+    width: 600px;
+    height: 880px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: inset 0 0 50px rgb(0, 115, 160);
+}
+
+.container>.header>.judul {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container>.subheader>.subjudul {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container>.header,
+.container>.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container>.header {
+    margin: 70px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container>.header .judul {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.container>.content {
+    width: 100%;
+    flex-direction: column;
+}
+
+.container>.content button {
+    width: 500px;
+    height: 70px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.container>.content button:hover {
+    background-color: rgb(34, 34, 34);
+    transform: scale(1.03) ease-in-out;
+    transition: .3s;
+}
+
+.container .footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .footer .subfooter {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+}
+@media only screen and (max-width: 375px) {
+    .container > .header .judul {
+        font-size: 15px;
+        margin: 0 5px 0 5px;
+    }
+    .container>.subheader>.subjudul {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+        margin-top: 3px;
+    }
+
+    .container > .content button {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .container .footer .subfooter {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: auto;
+        margin: 10px;
+    }
+    .container > .header {
+        margin: 35px 0 0 0;
+    }
+    .container > .header .judul {
+        font-size: 15px;
+        margin: 0 5px 0 5px;
+    }
+    .container>.subheader>.subjudul {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    .container > .content button {
+        width: 200px;
+        height: 40px;
+        font-size: 10px;
+    }
+    .container .footer .subfooter {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 30px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 600px;
+        height: 880px;
+        margin: 33px 0;
+    }
+
+    .container > .header .judul {
+        font-size: 25px;
+    }
+
+    .container > .content button {
+        width: 500px;
+        font-size: 17px;
+    }
+}
